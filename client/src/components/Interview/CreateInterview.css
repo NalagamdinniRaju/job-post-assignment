@@ -1,0 +1,158 @@
+
+  .create-interview-container {
+    max-width: 700px;
+   margin-top: 100px;
+    padding: 20px;
+ 
+    border-radius: 8px;
+
+  }
+  
+  .create-interview-form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .create-interview-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .create-interview-label {
+    width: 35%;
+    font-size: 22px;
+    font-weight: 500;
+    color: #333;
+    text-align: right;
+    
+
+  }
+  
+  .create-interview-input {
+    width: 90%;
+    padding: 12px 18px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.3s;
+
+    
+  }
+  
+  .create-interview-input:focus {
+    border-color: #0066ff;
+  }
+  
+  .create-interview-candidates {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    width: 90%;
+  }
+  
+  .create-interview-chip {
+    background-color: #f0f0f0;
+    padding: 4px 8px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  
+  .create-interview-chip-remove {
+    cursor: pointer;
+    font-size: 12px;
+    color: #666;
+  }
+  
+  .create-interview-date {
+    position: relative;
+    width: 90%;
+  }
+  
+  .create-interview-calendar-icon {
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #666;
+    pointer-events: none;
+  }
+  
+  .create-interview-button {
+    background-color: #0066ff;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+    align-self: flex-end;
+  }
+  
+  .create-interview-button:hover {
+    background-color: #0052cc;
+  }
+  
+  .create-interview-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.create-interview-chip-input {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    width: 90%;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 8px;
+    background-color: white;
+}
+
+.create-interview-chip {
+    background-color: #f0f0f0;
+    padding: 4px 8px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.create-interview-chip span {
+    font-size: 14px;
+    color: #333;
+}
+
+.create-interview-chip-remove {
+    cursor: pointer;
+    font-size: 14px;
+    color: #666;
+    transition: color 0.3s;
+}
+
+.create-interview-chip-remove:hover {
+    color: #ff4d4d;
+}
+
+.create-interview-chip-input-field {
+    border: none;
+    outline: none;
+    padding: 4px 8px;
+    font-size: 14px;
+    flex: 1;
+    min-width: 150px;
+}
+
+.create-interview-chip-input-field::placeholder {
+    color: #aaa;
+    font-style: italic;
+}

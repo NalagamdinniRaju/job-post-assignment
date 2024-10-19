@@ -1,0 +1,302 @@
+.nav-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 24px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  
+  .nav-content {
+    display: flex;
+    align-items: center;
+   
+  }
+  
+  .nav-logo {
+    height: 32px;
+    object-fit: contain;
+  }
+  
+  .nav-right {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+  
+  .nav-contact-button {
+    color: #666;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+  }
+  
+  .nav-contact-button:hover {
+    background-color: #f5f5f5;
+  }
+  
+  .nav-profile-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    padding: 6px 12px;
+    border-radius: 6px;
+    transition: background-color 0.2s;
+  }
+  
+  .nav-profile-container:hover {
+    background-color: #f5f5f5;
+  }
+  
+  .nav-profile-photo {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border: 2px solid #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .nav-profile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .nav-default-avatar {
+    font-size: 18px;
+    color: #666;
+  }
+  
+  .nav-profile-name {
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  .nav-dropdown-icon {
+    font-size: 12px;
+    color: #666;
+    transition: transform 0.2s;
+  }
+  
+  .nav-dropdown-menu {
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 0;
+    background-color: white;
+    border-radius: 12px;
+    width: 320px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    padding: 16px 0;
+    animation: nav-dropdownFade 0.2s ease;
+  }
+  
+  .nav-profile-header {
+    display: flex;
+    padding: 16px 20px;
+    gap: 16px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .nav-profile-photo-large {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border: 3px solid #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .nav-profile-image-large {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .nav-default-avatar-large {
+    font-size: 24px;
+    color: #666;
+  }
+  
+  .nav-profile-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  
+  .nav-profile-name-large {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .nav-company-name {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .nav-company-email {
+    font-size: 13px;
+    color: #888;
+  }
+  
+  .nav-stats-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 16px;
+    background-color: #f8f9fa;
+    margin: 16px 20px;
+    border-radius: 8px;
+  }
+  
+  .nav-stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+  }
+  
+  .nav-stat-number {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .nav-stat-label {
+    font-size: 12px;
+    color: #666;
+  }
+  
+  .nav-dropdown-divider {
+    height: 1px;
+    background-color: #eee;
+    margin: 8px 0;
+  }
+  
+  .nav-dropdown-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 20px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    outline: none;
+    border-width: 0;
+  }
+  
+  .nav-dropdown-item:hover {
+    background-color: #f5f5f5;
+  }
+  
+  .nav-dropdown-icon-item {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  @keyframes nav-dropdownFade {
+    from {
+      opacity: 0;
+      transform: translateY(-8px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  /* Add these styles to your existing Navbar.css */
+
+.nav-auth-buttons {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.nav-auth-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.nav-auth-button:first-child {
+  background-color: transparent;
+  color: #007bff;
+  border: 1px solid #007bff;
+}
+
+.nav-auth-button:last-child {
+  background-color: #007bff;
+  color: white;
+}
+
+.nav-auth-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-button-icon {
+  font-size: 16px;
+}
+
+/* Update existing dropdown styles */
+.nav-dropdown-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 16px;
+  cursor: pointer;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  color: #333;
+  transition: background-color 0.3s ease;
+}
+
+.nav-dropdown-item:hover {
+  background-color: #f5f5f5;
+}
+
+.nav-dropdown-icon-item {
+  font-size: 16px;
+  color: #666;
+}
+
+/* Toast notification styles */
+.Toastify__toast {
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.Toastify__toast--success {
+  color: #4caf50;
+}
+
+.Toastify__toast--error {
+  color: #f44336;
+}
